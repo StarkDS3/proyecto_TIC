@@ -1,0 +1,62 @@
+.fondo{
+    width: 100%;
+    /*height: calc(100vh - 164px);Altura calculada*/
+    height: 685px;
+    background-image: url('../../../public/presentacion.jpg');
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    /*align-items: center;lo coloca en el centro*/
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
+    position: relative;
+}
+
+.wlc{
+    background-color: rgba(238, 232, 232, 0.192);
+    color: #000000;
+    max-width: 600px;
+    border-radius: 10px;
+    padding: 70px;
+    position: absolute;
+    /*left y top ayudan a posicionar el hero section*/
+    left: 240px;
+    top: 120px;
+    
+}
+
+.p1 {
+    font-size: 2.3rem; /* Tamaño del texto principal */
+    margin-bottom: 10px;
+    font-weight: bold;
+    /*margin-bottom: 10px;*/
+}
+
+.p2 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+    
+.d {
+    color: #000000;
+    font-size: 4rem;
+    text-shadow: 0px 0px 10px #11b65e; /* Efecto luminoso */
+}
+
+.btn {
+    background-color: #11b65e;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 5px #11b65e;
+}
+
+.btn:hover {
+    background-color: #0e944d;
+    box-shadow: 0px 0px 10px #11b65e;
+}
