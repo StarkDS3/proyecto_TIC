@@ -30,6 +30,7 @@
     font-size: 2.3rem; /* Tamaño del texto principal */
     margin-bottom: 10px;
     font-weight: bold;
+    text-shadow: 5px 0px 0px #11b65e;
     /*margin-bottom: 10px;*/
 }
 
@@ -41,7 +42,7 @@
 .d {
     color: #000000;
     font-size: 4rem;
-    text-shadow: 0px 0px 10px #11b65e; /* Efecto luminoso */
+    text-shadow: 5px 0px 0px #11b65e; /* Efecto luminoso */
 }
 
 .btn {
@@ -60,3 +61,56 @@
     background-color: #0e944d;
     box-shadow: 0px 0px 10px #11b65e;
 }
+
+.s-slogan-service{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+.a-service{
+    padding: 140px 0px;
+    text-align: center;
+    width: 100% 0px;
+
+} /*El a-service es el que hace todos los movimientos de los componentes*/
+
+.s-title-main{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.d-service{
+
+    font-size: 16px;
+    border-radius: 10px;
+    width: 59%;
+    margin: 0 auto; /* Centra horizontalmente */
+    text-align: center;
+    padding: 50px 0px;
+
+}
+
+.container-scroll {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-end; /* acomoda parte inferior */
+    height: 67vh; /* ocupe la altura de la pantalla */
+    width: 100%;
+    position: relative; 
+}
+
+.container-whatsapp {
+    position: fixed; /* Ajusta el boton al movimiento del scroll */
+    right: 20px;
+    top: calc(65% + 100px); /* Calcula la altura */
+    z-index: 9999; /* Posiciona a la altura maxima */
+}
+
+.container-test {
+    background-color: #f1f1f1c2;
+    padding: 180px 0px;
+}
+
+
+

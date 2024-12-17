@@ -1,0 +1,6 @@
+[    
+    { "id": 1, "titulo": "Operaciones rapidas", "descripcion": "Rápido, seguro y siempre a tu alcance.", "icono": "icons/S1.png" },
+    { "id": 2, "titulo": "Alta seguridad", "descripcion": "Donde tu tranquilidad y seguridad es nuestra prioridad.", "icono": "icons/S2.png" },
+    { "id": 3, "titulo": "Consultas", "descripcion": "Estamos aquí para brindarte las mejores soluciones, consultas expertas y seguridad garantizados.", "icono": "icons/S3.png" },
+    { "id": 4, "titulo": "Bajos precios", "descripcion": "Calidad y protección, sin pagar de más.", "icono": "icons/S4.png" }
+]

@@ -1,0 +1,57 @@
+/* Contenedor del slider */
+.testimonial-slider {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  overflow: hidden;
+}
+
+/* Tarjeta de testimonio */
+.testimonial-card {
+  position: absolute;
+  width: 300px;
+  height: 350px;
+  padding: 20px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.8s ease;
+  z-index: 1; /* Asegúrate de que las tarjetas estén por encima del blob */
+}
+
+
+.testimonial-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+.testimonial-card.center {
+  z-index: 2;
+  transform: scale(1) translateX(0);
+  opacity: 1;
+}
+
+.testimonial-card.left {
+  z-index: 1;
+  transform: translateX(-120%) scale(0.8);
+  opacity: 0.6;
+}
+
+.testimonial-card.right {
+  z-index: 1;
+  transform: translateX(120%) scale(0.8);
+  opacity: 0.6;
+}
+
+.testimonial-card.hidden {
+  z-index: 0;
+  opacity: 0;
+  transform: scale(0.5);
+}
+
