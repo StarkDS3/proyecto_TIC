@@ -1,0 +1,18 @@
+.all_container_modal{
+    position: relative;
+}
+
+.container_modal{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.ocultar{
+    display: none;
+}
+
+.mostrar{
+    display: flex;
+}
