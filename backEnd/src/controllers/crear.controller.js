@@ -15,13 +15,8 @@ export const crearUsuario = async (req, res) => {
       idGrupo,
       idRh,
     } = req.body;
-    console.log(req.body);
-
     //ENCRIPTAR LA CONTRASEÑA
     const nuevaContra = await bcrypt.hash(contrasena, 10);
-
-    console.log(nuevaContra);
-
     const [insert] = await db.query(
       "INSERT INTO `usuarios`(`cedula`, `nombre`, `apellido`, `correo`, `telefono`, `direccion`, `edad`, `contrasena`, `idGrupo`, `idRh`, `idRol`, `estado`) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, '1' )",
       [
