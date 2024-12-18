@@ -1,0 +1,61 @@
+.container_all_crear{
+    width: 100%;
+    min-height: calc(100vh - 80px); /*ESTE CALCULO RESTA EL ALTO DE LA NAVBAR, POSIBLEMENTE LA CAMBIEN*/
+    padding: 40px 10px; 
+}
+
+.form_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 40px;
+    border-radius: 12px;
+    border:  3px solid var(--gris);
+}
+
+.form_container h3{
+    grid-column: span 2;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 2px solid var(--gris);
+    font-size: 22px;
+}
+
+.separador{
+    grid-column: span 2;
+    height: 3px;
+    background-color: var(--gris);
+}
+
+/* BOTONES */
+
+.container_buttons{
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 30px;
+}
+
+.container_buttons p{
+    grid-column: span 2;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.container_btn{
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+}
+
+/* AYUDA RESPONSIVE */
+
+@media screen and (max-width: 640px) {
+    .form_container, .container_buttons{
+        display: flex;
+        flex-direction: column;
+    }
+}
