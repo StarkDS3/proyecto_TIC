@@ -1,0 +1,30 @@
+.container_select{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.container_select select{
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid var(--green);
+    box-shadow: 0px 0px 4px 0px var(--green);
+}
+
+/*CLASES PARA LOS ERRORES*/
+.error_input{
+    color: var(--error);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.error_input img{
+    width: 15px;
+    height: 15px;
+}
+
+.error{
+    border: 2px solid var(--error) !important;
+}
