@@ -2,6 +2,8 @@ import React from "react";
 import "./Navbar.css";
 import logo from "../../LOGO.png";
 import { Link } from "react-router-dom";
+import ModalLogin from "../modals/login/modalLogin";
+import ButtonLink from "../buttons/buttonLink/buttonLink";
 
 const Navbar = () => {
   return (
@@ -11,6 +13,12 @@ const Navbar = () => {
       </Link>
 
       <nav className="navbar">
+        <ButtonLink texto={"Inicio"} ruta={"/"} />
+        <ButtonLink texto={"Servicios"} ruta={"/servicios"} />
+        <ButtonLink texto={"Nosotros"} ruta={"/nosotros"} />
+
+        {/*
+        JJC - Implementacion de componentes para estos botones
         <Link to={"/"} className="button">
           Inicio
         </Link>
@@ -20,9 +28,14 @@ const Navbar = () => {
         <Link to={"/nosotros"} className="button">
           Nosotr@s
         </Link>
-        <Link to={"/acceso"} className="button">
-          Acceso
-        </Link>
+        */}
+        <ModalLogin />
+        {/**
+            JJC - Lo borro ya que se suplanta por el modalLogin
+            <Link to={"/acceso"} className="button">
+              Acceso
+            </Link>
+           */}
       </nav>
     </header>
   );

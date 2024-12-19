@@ -1,0 +1,10 @@
+.button_solid{
+    background-color: var(--green);
+    padding: 10px;
+    border-radius: .5em;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500;
+    border: none;
+    box-shadow: 0px 0px 5px 0px var(--green);
+}

@@ -1,0 +1,22 @@
+.header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    padding: 14px 3%;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+.navbar{
+  display: flex;
+  gap:20;
+}
