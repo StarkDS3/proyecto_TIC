@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route, Router, Routes, useNavigate } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import { Inicio } from './views/inicio/Inicio';
 import {Nosotros} from './views/nosotros/Nosotros';
 /*import { Servicios } from './views/servicios/Servicios';*/
@@ -9,6 +9,7 @@ import { RedirectToGit } from './components/WebReference/RedirectToGit';
 import { RedirectToYoutube } from './components/WebReference/RedirectToYoutube';
 import { RedirectToX } from './components/WebReference/RedirectToX';
 import { ProyectoTic } from './components/WebReference/ProyectoTic';
+import Crear from './views/crear/crear';
 
 const RoutesCustom = () => {
 
@@ -23,7 +24,7 @@ const RoutesCustom = () => {
         <Route path='/youtube' element= { <RedirectToYoutube/> } />
         <Route path='/twitter' element= { <RedirectToX/> } />
         <Route path='/proyecto' element= { <ProyectoTic/> } />
-
+        <Route path='/crear' element={ <Crear />} />
     </Routes>
   )
 }
