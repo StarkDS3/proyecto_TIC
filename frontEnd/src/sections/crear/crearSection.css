@@ -1,10 +1,10 @@
-.container_all_crear{
+.container_all_crear {
     width: 100%;
     min-height: calc(100vh - 80px); /*ESTE CALCULO RESTA EL ALTO DE LA NAVBAR, POSIBLEMENTE LA CAMBIEN*/
-    padding: 40px 10px; 
+    padding: 40px 10px;
 }
 
-.form_container{
+.form_container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
@@ -13,10 +13,10 @@
     margin: 0 auto;
     padding: 20px 40px;
     border-radius: 12px;
-    border:  3px solid var(--gris);
+    border: 3px solid var(--gris);
 }
 
-.form_container h3{
+.form_container h3 {
     grid-column: span 2;
     text-align: center;
     padding: 10px;
@@ -24,7 +24,7 @@
     font-size: 22px;
 }
 
-.separador{
+.separador {
     grid-column: span 2;
     height: 3px;
     background-color: var(--gris);
@@ -32,30 +32,65 @@
 
 /* BOTONES */
 
-.container_buttons{
+.container_buttons {
     grid-column: span 2;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px 30px;
 }
 
-.container_buttons p{
+.container_buttons p {
     grid-column: span 2;
     font-size: 16px;
     font-weight: 600;
 }
 
-.container_btn{
+.container_btn {
     grid-column: span 2;
     display: flex;
     justify-content: center;
+    background-color: green;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--primary-color-dark);
 }
 
 /* AYUDA RESPONSIVE */
 
 @media screen and (max-width: 640px) {
-    .form_container, .container_buttons{
+    .form_container, .container_buttons {
         display: flex;
         flex-direction: column;
     }
+}
+
+/* MODAL */
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal div {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
 }

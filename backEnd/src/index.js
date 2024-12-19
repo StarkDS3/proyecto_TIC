@@ -12,5 +12,5 @@ app.use(morgan("dev")); //SOLO DESARROLLO
 app.use(ruta);
 
 app.listen(4321, () => {
-  console.log(`Servidor corriendo en el puerto 4231`);
+  console.log(`Servidor corriendo en el puerto 4321`);
 });
